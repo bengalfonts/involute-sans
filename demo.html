@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Involute Sans - Font Demo</title>
+    <style>
+        @font-face {
+            font-family: 'Involute Sans';
+            src: url('fonts/woff2/InvoluteSans-Regular.woff2') format('woff2'),
+                 url('fonts/woff/InvoluteSans-Regular.woff') format('woff'),
+                 url('fonts/ttf/InvoluteSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Involute Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        
+        .bangla-text {
+            margin-bottom: 2rem;
+        }
+        
+        .english-text {
+            margin-bottom: 2rem;
+        }
+
+        .char-set {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .char-set h3 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .char-set .letters {
+            font-size: 1.5rem;
+            line-height: 2;
+            color: #4a5568;
+            word-spacing: 0.5em;
+            margin-bottom: 1rem;
+        }
+
+        .char-set .numerals {
+            font-size: 1.5rem;
+            color: #4a5568;
+            word-spacing: 0.5em;
+        }
+
+        .scale-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+
+        .scale-item p {
+            margin-top: 0.5rem;
+            color: #4a5568;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #2d3748;
+            border-bottom: 3px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .font-samples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .sample {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .sample h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .sample p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #2d3748;
+        }
+
+        .typography-demo {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .size-demo {
+            margin-bottom: 1.5rem;
+        }
+
+        .size-demo h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        .size-demo h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .size-demo h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .size-demo h4 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .size-demo h5 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .size-demo h6 { font-size: 1rem; margin-bottom: 0.5rem; }
+
+        .text-demo {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .text-demo p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 2rem 1rem;
+            }
+            
+            .font-samples {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ইনভলিউট স্যান্স / Involute Sans</h1>
+            <p>একটি আধুনিক, জ্যামিতিক স্যান্স-সেরিফ টাইপফেস / A modern, geometric sans-serif typeface</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>ফন্ট নমুনা / Font Samples</h2>
+                <div class="font-samples">
+                    <div class="sample">
+                        <h3>শিরোনাম / Headlines</h3>
+                        <p>বাংলা: নিখুঁত টাইপোগ্রাফি এবং সৃজনশীল ডিজাইনের সমন্বয়ে তৈরি একটি আধুনিক ফন্ট।</p>
+                        <p>English: Perfect for creating impactful headlines that demand attention while maintaining readability.</p>
+                    </div>
+                    <div class="sample">
+                        <h3>টেক্সট / Body Text</h3>
+                        <p>বাংলা: এই ফন্টটি দীর্ঘ পাঠ্যের জন্য বিশেষভাবে অপটিমাইজ করা হয়েছে, যেখানে প্রতিটি অক্ষর স্পষ্ট এবং পড়ার জন্য আরামদায়ক।</p>
+                        <p>English: Optimized for extended reading, with carefully crafted letterforms that ensure comfortable reading.</p>
+                    </div>
+                    <div class="sample">
+                        <h3>ইউজার ইন্টারফেস / UI</h3>
+                        <p>বাংলা: ডিজিটাল ইন্টারফেসের জন্য ডিজাইন করা, বিভিন্ন স্ক্রিন রেজোলিউশনে স্পষ্ট দৃশ্যমানতা।</p>
+                        <p>English: Designed with digital interfaces in mind, offering clear legibility across various screens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>টাইপোগ্রাফি স্কেল / Typography Scale</h2>
+                <div class="typography-demo">
+                    <div class="size-demo">
+                        <div class="scale-item">
+                            <h1>শিরোনাম ১ / Heading 1 - 3rem</h1>
+                            <p>আমার সোনার বাংলা, আমি তোমায় ভালোবাসি।</p>
+                            <p>The quick brown fox jumps over the lazy dog.</p>
+                        </div>
+                        <div class="scale-item">
+                            <h2>শিরোনাম ২ / Heading 2 - 2.5rem</h2>
+                            <p>চিরদিন তোমার আকাশ, তোমার বাতাস।</p>
+                            <p>Pack my box with five dozen liquor jugs.</p>
+                        </div>
+                        <div class="scale-item">
+                            <h3>শিরোনাম ৩ / Heading 3 - 2rem</h3>
+                            <p>আমার প্রাণে বাজায় বাঁশি।</p>
+                            <p>How vexingly quick daft zebras jump.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>বর্ণমালা / Character Set</h2>
+                <div class="text-demo">
+                    <div class="char-set bangla">
+                        <h3>বাংলা বর্ণমালা</h3>
+                        <p class="letters">অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত থ দ ধ ন প ফ ব ভ ম য র ল শ ষ স হ ড় ঢ় য় ৎ ং ঃ ঁ</p>
+                        <p class="numerals">০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮ ৯</p>
+                    </div>
+                    <div class="char-set latin">
+                        <h3>Latin Alphabet</h3>
+                        <p class="letters">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                        <p class="letters">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                        <p class="numerals">0 1 2 3 4 5 6 7 8 9</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>টেক্সট নমুনা / Text Examples</h2>
+                <div class="text-demo">
+                    <div class="bangla-text">
+                        <h3>বাংলা প্যারাগ্রাফ</h3>
+                        <p>বাংলা ভাষা আমাদের মাতৃভাষা। এই ভাষার জন্য আমরা গর্বিত। আমাদের সাহিত্য, সংস্কৃতি, ইতিহাস সবই এই ভাষার সাথে জড়িত। একুশে ফেব্রুয়ারি আমাদের ভাষা আন্দোলনের স্মৃতি বহন করে। আমরা আমাদের ভাষার জন্য প্রাণ দিয়েছি, ভাষার মর্যাদা রক্ষা করেছি।</p>
+                        
+                        <p>টাইপোগ্রাফি হল একটি শিল্প যা টেক্সটকে দৃশ্যমান এবং পাঠযোগ্য করে তোলে। একটি ভালো ফন্ট শুধু সুন্দর নয়, পড়ার জন্য আরামদায়কও হওয়া উচিত। ইনভলিউট স্যান্স এই দুটি বৈশিষ্ট্যকেই গুরুত্ব দিয়েছে।</p>
+                    </div>
+                    
+                    <div class="english-text">
+                        <h3>English Paragraphs</h3>
+                        <p>Typography is where art meets language. It's the craft of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader. Involute Sans embraces this philosophy by combining geometric precision with cultural sensitivity.</p>
+                        
+                        <p>The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet, making it perfect for displaying the character set of a typeface. Pack my box with five dozen liquor jugs - another pangram that helps visualize the font in action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Involute Sans Project. Licensed under SIL Open Font License.</p>
+        </div>
+    </div>
+</body>
+</html>
