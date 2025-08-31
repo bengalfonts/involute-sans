@@ -30,7 +30,7 @@ This directory contains documentation and visual assets for the Involute Sans fo
 ## Organizations
 
 ### Bengal Fonts
-- **Description**: First type foundry from Bangladesh
+- **Description**: Where cultural heritage meets modern design
 - **Logo**: `bengal_fonts_logo.jpg`
 
 ### Involute Tech

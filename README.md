@@ -100,7 +100,7 @@ The font files can be installed directly on any operating system:
 
 ## Organizations
 
-- **Bengal Fonts** - First type foundry from Bangladesh
+- **Bengal Fonts** - Where cultural heritage meets modern design
 - **Involute Tech** - Technology company focused on innovation and design
 
 ## License
