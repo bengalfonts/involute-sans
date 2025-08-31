@@ -265,6 +265,100 @@
             width: 100%;
             height: auto;
             display: block;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .specimen-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Fullscreen Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            width: 90%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #c9dbcb;
+        }
+
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            padding: 10px 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .modal-nav:hover {
+            background-color: rgba(201, 219, 203, 0.2);
+            color: #c9dbcb;
+        }
+
+        .modal-prev {
+            left: 30px;
+        }
+
+        .modal-next {
+            right: 30px;
+        }
+
+        .modal-counter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 20px;
         }
 
         @media (max-width: 768px) {
@@ -291,6 +385,31 @@
 
             .specimen-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .modal-nav {
+                font-size: 20px;
+                padding: 8px 12px;
+            }
+
+            .modal-prev {
+                left: 15px;
+            }
+
+            .modal-next {
+                right: 15px;
+            }
+
+            .modal-close {
+                top: 15px;
+                right: 20px;
+                font-size: 30px;
+            }
+
+            .modal-counter {
+                bottom: 20px;
+                font-size: 14px;
+                padding: 8px 16px;
             }
         }
     </style>
@@ -473,42 +592,43 @@
 
         <div class="demo-section">
             <h2>Font Specimens</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Click on any image to view in fullscreen</p>
             <div class="specimen-grid">
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-01.png" alt="Involute Sans Specimen 1" class="specimen-image">
+                    <img src="documentation/Involute-Sans-01.png" alt="Involute Sans Specimen 1" class="specimen-image" onclick="openModal(0)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-02.png" alt="Involute Sans Specimen 2" class="specimen-image">
+                    <img src="documentation/Involute-Sans-02.png" alt="Involute Sans Specimen 2" class="specimen-image" onclick="openModal(1)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-03.png" alt="Involute Sans Specimen 3" class="specimen-image">
+                    <img src="documentation/Involute-Sans-03.png" alt="Involute Sans Specimen 3" class="specimen-image" onclick="openModal(2)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-04.png" alt="Involute Sans Specimen 4" class="specimen-image">
+                    <img src="documentation/Involute-Sans-04.png" alt="Involute Sans Specimen 4" class="specimen-image" onclick="openModal(3)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-05.png" alt="Involute Sans Specimen 5" class="specimen-image">
+                    <img src="documentation/Involute-Sans-05.png" alt="Involute Sans Specimen 5" class="specimen-image" onclick="openModal(4)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-06.png" alt="Involute Sans Specimen 6" class="specimen-image">
+                    <img src="documentation/Involute-Sans-06.png" alt="Involute Sans Specimen 6" class="specimen-image" onclick="openModal(5)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-07.png" alt="Involute Sans Specimen 7" class="specimen-image">
+                    <img src="documentation/Involute-Sans-07.png" alt="Involute Sans Specimen 7" class="specimen-image" onclick="openModal(6)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-08.png" alt="Involute Sans Specimen 8" class="specimen-image">
+                    <img src="documentation/Involute-Sans-08.png" alt="Involute Sans Specimen 8" class="specimen-image" onclick="openModal(7)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-09.png" alt="Involute Sans Specimen 9" class="specimen-image">
+                    <img src="documentation/Involute-Sans-09.png" alt="Involute Sans Specimen 9" class="specimen-image" onclick="openModal(8)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-10.png" alt="Involute Sans Specimen 10" class="specimen-image">
+                    <img src="documentation/Involute-Sans-10.png" alt="Involute Sans Specimen 10" class="specimen-image" onclick="openModal(9)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-11.png" alt="Involute Sans Specimen 11" class="specimen-image">
+                    <img src="documentation/Involute-Sans-11.png" alt="Involute Sans Specimen 11" class="specimen-image" onclick="openModal(10)">
                 </div>
                 <div class="specimen-item">
-                    <img src="documentation/Involute-Sans-12.png" alt="Involute Sans Specimen 12" class="specimen-image">
+                    <img src="documentation/Involute-Sans-12.png" alt="Involute Sans Specimen 12" class="specimen-image" onclick="openModal(11)">
                 </div>
             </div>
         </div>
@@ -519,5 +639,103 @@
             <p><em>Involute Sans - Where Mathematics Meets Typography</em></p>
         </div>
     </div>
+
+    <!-- Fullscreen Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <span class="modal-nav modal-prev" onclick="changeImage(-1)">&#10094;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <span class="modal-nav modal-next" onclick="changeImage(1)">&#10095;</span>
+            <div class="modal-counter">
+                <span id="imageCounter">1 / 12</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Image gallery data
+        const images = [
+            'documentation/Involute-Sans-01.png',
+            'documentation/Involute-Sans-02.png',
+            'documentation/Involute-Sans-03.png',
+            'documentation/Involute-Sans-04.png',
+            'documentation/Involute-Sans-05.png',
+            'documentation/Involute-Sans-06.png',
+            'documentation/Involute-Sans-07.png',
+            'documentation/Involute-Sans-08.png',
+            'documentation/Involute-Sans-09.png',
+            'documentation/Involute-Sans-10.png',
+            'documentation/Involute-Sans-11.png',
+            'documentation/Involute-Sans-12.png'
+        ];
+
+        let currentImageIndex = 0;
+
+        function openModal(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const imageCounter = document.getElementById('imageCounter');
+            
+            modal.style.display = 'block';
+            modalImage.src = images[currentImageIndex];
+            imageCounter.textContent = `${currentImageIndex + 1} / ${images.length}`;
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            
+            // Loop around if at the beginning or end
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            
+            const modalImage = document.getElementById('modalImage');
+            const imageCounter = document.getElementById('imageCounter');
+            
+            modalImage.src = images[currentImageIndex];
+            imageCounter.textContent = `${currentImageIndex + 1} / ${images.length}`;
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('imageModal');
+            if (modal.style.display === 'block') {
+                switch(event.key) {
+                    case 'Escape':
+                        closeModal();
+                        break;
+                    case 'ArrowLeft':
+                        changeImage(-1);
+                        break;
+                    case 'ArrowRight':
+                        changeImage(1);
+                        break;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
