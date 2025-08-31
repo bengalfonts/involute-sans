@@ -1,8 +1,8 @@
-# Font build artifacts
-fonts/
-*.ttf
-*.woff
-*.woff2
+# Font build artifacts (commented out for Google Fonts submission)
+# fonts/
+# *.ttf
+# *.woff
+# *.woff2
 
 # Python
 __pycache__/
