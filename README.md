@@ -34,7 +34,7 @@ involute-sans/
 ├── docs/                     # Documentation and images
 │   ├── images/              # Designer photos and logos
 │   └── README.md            # Documentation
-├── demo.html                 # Interactive font preview
+├── demo-preview.html         # Interactive font preview
 ├── METADATA.pb              # Google Fonts metadata
 ├── DESCRIPTION               # Font description
 ├── OFL.txt                  # Open Font License
@@ -62,7 +62,7 @@ The font files are ready to use directly. No additional setup or building is req
 ## Demo
 
 View the font in action with our interactive demo:
-- **Demo HTML**: [demo.html](demo.html) - Complete font preview with Bengali and Latin text
+- **Demo Preview**: [demo-preview.html](demo-preview.html) - Complete font preview with Bengali and Latin text
 - **Documentation**: [docs/](docs/) - Designer information and visual assets
 
 ## Usage

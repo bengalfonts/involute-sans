@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Involute Sans - Font Preview</title>
+    <title>Involute Sans - Demo Preview</title>
     <style>
         @font-face {
             font-family: 'Involute Sans';
@@ -188,6 +188,85 @@
             opacity: 0.7;
         }
 
+        .documentation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .doc-section h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .designer-grid, .org-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .designer-item, .org-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .designer-photo, .org-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #667eea;
+        }
+
+        .org-logo {
+            border-radius: 10px;
+        }
+
+        .designer-info h4, .org-info h4 {
+            color: #667eea;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .designer-info p, .org-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .specimen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .specimen-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .specimen-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .specimen-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2.5rem;
@@ -198,6 +277,19 @@
             }
             
             .font-showcase {
+                grid-template-columns: 1fr;
+            }
+
+            .documentation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .designer-item, .org-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .specimen-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -211,31 +303,49 @@
         </div>
 
         <div class="demo-section">
-            <h2>Font Sizes</h2>
+            <h2>Font Sizes - English & Bengali</h2>
             <div class="size-demo">
                 <div class="size-item">
                     <span class="size-label">12px</span>
-                    <span class="text-sample" style="font-size: 12px;">The quick brown fox jumps over the lazy dog</span>
+                    <div class="text-sample" style="font-size: 12px;">
+                        <div>English: The quick brown fox jumps over the lazy dog</div>
+                        <div>Bengali: দ্রুত বাদামি শিয়াল অলস কুকুরের উপর লাফিয়ে ওঠে</div>
+                    </div>
                 </div>
                 <div class="size-item">
                     <span class="size-label">14px</span>
-                    <span class="text-sample" style="font-size: 14px;">The quick brown fox jumps over the lazy dog</span>
+                    <div class="text-sample" style="font-size: 14px;">
+                        <div>English: The quick brown fox jumps over the lazy dog</div>
+                        <div>Bengali: দ্রুত বাদামি শিয়াল অলস কুকুরের উপর লাফিয়ে ওঠে</div>
+                    </div>
                 </div>
                 <div class="size-item">
                     <span class="size-label">16px</span>
-                    <span class="text-sample" style="font-size: 16px;">The quick brown fox jumps over the lazy dog</span>
+                    <div class="text-sample" style="font-size: 16px;">
+                        <div>English: The quick brown fox jumps over the lazy dog</div>
+                        <div>Bengali: দ্রুত বাদামি শিয়াল অলস কুকুরের উপর লাফিয়ে ওঠে</div>
+                    </div>
                 </div>
                 <div class="size-item">
                     <span class="size-label">18px</span>
-                    <span class="text-sample" style="font-size: 18px;">The quick brown fox jumps over the lazy dog</span>
+                    <div class="text-sample" style="font-size: 18px;">
+                        <div>English: The quick brown fox jumps over the lazy dog</div>
+                        <div>Bengali: দ্রুত বাদামি শিয়াল অলস কুকুরের উপর লাফিয়ে ওঠে</div>
+                    </div>
                 </div>
                 <div class="size-item">
                     <span class="size-label">24px</span>
-                    <span class="text-sample" style="font-size: 24px;">The quick brown fox jumps over the lazy dog</span>
+                    <div class="text-sample" style="font-size: 24px;">
+                        <div>English: The quick brown fox jumps over the lazy dog</div>
+                        <div>Bengali: দ্রুত বাদামি শিয়াল অলস কুকুরের উপর লাফিয়ে ওঠে</div>
+                    </div>
                 </div>
                 <div class="size-item">
                     <span class="size-label">32px</span>
-                    <span class="text-sample" style="font-size: 32px;">The quick brown fox jumps over the lazy dog</span>
+                    <div class="text-sample" style="font-size: 32px;">
+                        <div>English: The quick brown fox jumps over the lazy dog</div>
+                        <div>Bengali: দ্রুত বাদামি শিয়াল অলস কুকুরের উপর লাফিয়ে ওঠে</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,6 +416,99 @@
                         <button style="background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: 'Involute Sans', sans-serif; cursor: pointer;">Button Text</button>
                         <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Caption and small text</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Documentation & Designers</h2>
+            <div class="documentation-grid">
+                <div class="doc-section">
+                    <h3>Designers</h3>
+                    <div class="designer-grid">
+                        <div class="designer-item">
+                            <img src="docs/images/thouhedul_islam_himel.jpg" alt="Thouhedul Islam Himel" class="designer-photo">
+                            <div class="designer-info">
+                                <h4>Thouhedul Islam Himel</h4>
+                                <p>Lead Type Designer, Bengal Fonts</p>
+                            </div>
+                        </div>
+                        <div class="designer-item">
+                            <img src="docs/images/nowab_aminul_haq.jpg" alt="Nowab Md. Aminul Haq" class="designer-photo">
+                            <div class="designer-info">
+                                <h4>Nowab Md. Aminul Haq</h4>
+                                <p>Founder, Involute Tech</p>
+                            </div>
+                        </div>
+                        <div class="designer-item">
+                            <img src="docs/images/kazi_nasirul_islam.jpg" alt="Kazi Nasirul Islam" class="designer-photo">
+                            <div class="designer-info">
+                                <h4>Kazi Nasirul Islam</h4>
+                                <p>Associate Type Developer, Bengal Fonts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-section">
+                    <h3>Organizations</h3>
+                    <div class="org-grid">
+                        <div class="org-item">
+                            <img src="docs/images/bengal_fonts_logo.jpg" alt="Bengal Fonts Logo" class="org-logo">
+                            <div class="org-info">
+                                <h4>Bengal Fonts</h4>
+                                <p>First type foundry from Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="org-item">
+                            <img src="docs/images/involute_tech_logo.jpg" alt="Involute Tech Logo" class="org-logo">
+                            <div class="org-info">
+                                <h4>Involute Tech</h4>
+                                <p>Technology company focused on innovation and design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Font Specimens</h2>
+            <div class="specimen-grid">
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-01.png" alt="Involute Sans Specimen 1" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-02.png" alt="Involute Sans Specimen 2" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-03.png" alt="Involute Sans Specimen 3" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-04.png" alt="Involute Sans Specimen 4" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-05.png" alt="Involute Sans Specimen 5" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-06.png" alt="Involute Sans Specimen 6" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-07.png" alt="Involute Sans Specimen 7" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-08.png" alt="Involute Sans Specimen 8" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-09.png" alt="Involute Sans Specimen 9" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-10.png" alt="Involute Sans Specimen 10" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-11.png" alt="Involute Sans Specimen 11" class="specimen-image">
+                </div>
+                <div class="specimen-item">
+                    <img src="documentation/Involute-Sans-12.png" alt="Involute Sans Specimen 12" class="specimen-image">
                 </div>
             </div>
         </div>
