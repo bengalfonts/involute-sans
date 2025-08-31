@@ -28,8 +28,13 @@ involute-sans/
 │   ├── woff/                # WOFF fonts
 │   └── woff2/               # WOFF2 fonts
 ├── sources/                  # Source font files
-│   └── InvoluteSans-Regular.otf
+│   ├── InvoluteSans-Regular.otf
+│   └── InvoluteSans-Regular.glyphs
 ├── designers/                # Designer information and logos
+├── docs/                     # Documentation and images
+│   ├── images/              # Designer photos and logos
+│   └── README.md            # Documentation
+├── demo.html                 # Interactive font preview
 ├── METADATA.pb              # Google Fonts metadata
 ├── DESCRIPTION               # Font description
 ├── OFL.txt                  # Open Font License
@@ -53,6 +58,12 @@ All critical issues have been resolved:
 ## Installation
 
 The font files are ready to use directly. No additional setup or building is required.
+
+## Demo
+
+View the font in action with our interactive demo:
+- **Demo HTML**: [demo.html](demo.html) - Complete font preview with Bengali and Latin text
+- **Documentation**: [docs/](docs/) - Designer information and visual assets
 
 ## Usage
 

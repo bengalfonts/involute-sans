@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Involute Sans - Font Preview</title>
+    <style>
+        @font-face {
+            font-family: 'Involute Sans';
+            src: url('fonts/woff2/InvoluteSans-Regular.woff2') format('woff2'),
+                 url('fonts/woff/InvoluteSans-Regular.woff') format('woff'),
+                 url('fonts/ttf/InvoluteSans-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Involute Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .demo-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .demo-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .font-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .showcase-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        .showcase-item h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .text-sample {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .size-demo {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .size-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .size-label {
+            min-width: 60px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .alphabet-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .alphabet-section h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .alphabet-text {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .bengali-demo {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: #333;
+        }
+
+        .bengali-demo h4 {
+            color: #d63384;
+        }
+
+        .latin-demo {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #333;
+        }
+
+        .latin-demo h4 {
+            color: #0d6efd;
+        }
+
+        .numbers-demo {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
+        }
+
+        .numbers-demo h4 {
+            color: #fd7e14;
+        }
+
+        .specimen-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+
+        .footer a:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .demo-section {
+                padding: 20px;
+            }
+            
+            .font-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Involute Sans</h1>
+            <p>A contemporary Bangla & English geometric sans-serif typeface</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>Font Sizes</h2>
+            <div class="size-demo">
+                <div class="size-item">
+                    <span class="size-label">12px</span>
+                    <span class="text-sample" style="font-size: 12px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">14px</span>
+                    <span class="text-sample" style="font-size: 14px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">16px</span>
+                    <span class="text-sample" style="font-size: 16px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">18px</span>
+                    <span class="text-sample" style="font-size: 18px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">24px</span>
+                    <span class="text-sample" style="font-size: 24px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">32px</span>
+                    <span class="text-sample" style="font-size: 32px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Character Sets</h2>
+            <div class="alphabet-demo">
+                <div class="alphabet-section bengali-demo">
+                    <h4>Bengali (বাংলা)</h4>
+                    <div class="alphabet-text">
+                        অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ<br>
+                        ক খ গ ঘ ঙ চ ছ জ ঝ ঞ<br>
+                        ট ঠ ড ঢ ণ ত থ দ ধ ন<br>
+                        প ফ ব ভ ম য র ল শ<br>
+                        ষ স হ ড় ঢ় য় ৎ ং ঃ ঁ
+                    </div>
+                </div>
+                <div class="alphabet-section latin-demo">
+                    <h4>Latin (A-Z)</h4>
+                    <div class="alphabet-text">
+                        A B C D E F G H I J K L M<br>
+                        N O P Q R S T U V W X Y Z<br>
+                        a b c d e f g h i j k l m<br>
+                        n o p q r s t u v w x y z
+                    </div>
+                </div>
+                <div class="alphabet-section numbers-demo">
+                    <h4>Numbers & Symbols</h4>
+                    <div class="alphabet-text">
+                        0 1 2 3 4 5 6 7 8 9<br>
+                        ! @ # $ % ^ & * ( )<br>
+                        + - = [ ] { } | \ : ;<br>
+                        " ' < > , . ? / ~ `
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Text Specimen</h2>
+            <div class="specimen-text">
+                <p><strong>English Text:</strong> Involute Sans is a contemporary geometric sans-serif typeface designed for both digital and print applications. Rooted in the harmony of the Fibonacci sequence and the Golden Ratio, each character has been meticulously shaped to achieve balance, rhythm, and timeless elegance. The font offers clarity, efficiency, and versatility, making it ideal for corporate branding, web design, software UI, editorial content, and presentations.</p>
+                
+                <p><strong>Bengali Text:</strong> ইনভোলিউট সান্স হল একটি সমসাময়িক জ্যামিতিক সান্স-সেরিফ টাইপফেস যা ডিজিটাল এবং প্রিন্ট উভয় অ্যাপ্লিকেশনের জন্য ডিজাইন করা হয়েছে। ফিবোনাচি সিকোয়েন্স এবং গোল্ডেন রেশিওর সাদৃশ্যে ভিত্তি করে, প্রতিটি অক্ষরকে ভারসাম্য, ছন্দ এবং কালজয়ী সৌন্দর্য অর্জনের জন্য সযত্নে আকার দেওয়া হয়েছে। ফন্টটি স্বচ্ছতা, দক্ষতা এবং বহুমুখিতা প্রদান করে, যা এটিকে কর্পোরেট ব্র্যান্ডিং, ওয়েব ডিজাইন, সফ্টওয়্যার UI, সম্পাদকীয় বিষয়বস্তু এবং উপস্থাপনার জন্য আদর্শ করে তোলে।</p>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Usage Examples</h2>
+            <div class="font-showcase">
+                <div class="showcase-item">
+                    <h3>Headings</h3>
+                    <div class="text-sample">
+                        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Main Heading</h1>
+                        <h2 style="font-size: 2rem; margin-bottom: 10px;">Section Heading</h2>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Subsection</h3>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <h3>Body Text</h3>
+                    <div class="text-sample">
+                        <p>This is a paragraph of body text demonstrating how Involute Sans performs in regular reading contexts. The font maintains excellent readability while providing a modern, geometric aesthetic.</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <h3>UI Elements</h3>
+                    <div class="text-sample">
+                        <button style="background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: 'Involute Sans', sans-serif; cursor: pointer;">Button Text</button>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Caption and small text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Designed by <strong>Bengal Fonts</strong> & <strong>Involute Tech</strong></p>
+            <p>Visit <a href="https://bengalfonts.com">bengalfonts.com</a> | Contact <a href="mailto:bengalfonts@gmail.com">bengalfonts@gmail.com</a></p>
+            <p><em>Involute Sans - Where Mathematics Meets Typography</em></p>
+        </div>
+    </div>
+</body>
+</html>
