@@ -46,7 +46,7 @@ organization {
 
 license: "OFL"
 category: "SANS_SERIF"
-date_added: "2025-01-01"
+date_added: "2025-01-27"
 fonts {
   name: "Involute Sans"
   style: "normal"
@@ -57,7 +57,6 @@ fonts {
   copyright: "Copyright 2025 The Involute Sans Project Authors (https://github.com/bengalfonts/involute-sans)"
 }
 subsets: "latin"
-subsets: "latin-ext"
 subsets: "bengali"
 subsets: "menu"
 primary_script: "Bangla"

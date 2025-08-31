@@ -1,4 +1,0 @@
-fonttools>=4.38.0
-gftools>=2.0.0
-brotli>=1.0.9
-zopfli>=0.2.0

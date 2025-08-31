@@ -1,6 +1,6 @@
 # Involute Sans
 
-A contemporary Bangla & English geometric sans-serif typeface, crafted with precision and mathematical harmony for today’s digital and print world.
+A contemporary Bangla & English geometric sans-serif typeface, crafted with precision and mathematical harmony for today's digital and print world.
 
 ## Overview
 
@@ -13,8 +13,8 @@ More than just a typeface, Involute Sans reflects the shared vision of Involute 
 ## Font Files
 
 This project contains the following font formats:
+- **InvoluteSans-Regular.ttf** - TrueType font (Google Fonts optimized)
 - **InvoluteSans-Regular.otf** - OpenType font (source)
-- **InvoluteSans-Regular.ttf** - TrueType font
 - **InvoluteSans-Regular.woff** - Web Open Font Format
 - **InvoluteSans-Regular.woff2** - Web Open Font Format 2.0
 
@@ -23,67 +23,36 @@ This project contains the following font formats:
 ```
 involute-sans/
 ├── fonts/                    # Compiled font files
-│   ├── ttf/                 # TrueType fonts
+│   ├── ttf/                 # TrueType font (Google Fonts ready)
+│   ├── otf/                 # OpenType fonts
 │   ├── woff/                # WOFF fonts
 │   └── woff2/               # WOFF2 fonts
 ├── sources/                  # Source font files
 │   └── InvoluteSans-Regular.otf
+├── designers/                # Designer information and logos
 ├── METADATA.pb              # Google Fonts metadata
 ├── DESCRIPTION               # Font description
 ├── OFL.txt                  # Open Font License
-├── README.md                # This file
-└── build.py                 # Build script
+├── AUTHORS.txt              # Author information
+├── CONTRIBUTORS.txt         # Contributor information
+└── README.md                # This file
 ```
 
-## Setup
+## Google Fonts Ready
 
-### Prerequisites
+✅ **This font is now ready for Google Fonts publication!**
 
-1. Python 3.7+
-2. Google Fonts tools
-3. FontTools
+All critical issues have been resolved:
+- Missing ẞ (LATIN CAPITAL LETTER SHARP S) glyph added
+- Invalid Bengali glyph names fixed
+- Smart dropout control added
+- Vertical metrics optimized
+- Contour issues resolved
+- OFL license updated with correct URLs
 
-### Installation
+## Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/googlefonts/involute-sans.git
-cd involute-sans
-
-# Install dependencies
-pip install fonttools
-pip install gftools
-
-# Install Google Fonts tools
-pip install gftools
-```
-
-## Building Fonts
-
-### Using the Build Script
-
-```bash
-python build.py
-```
-
-This will:
-- Generate TTF files from source OTF files
-- Create WOFF and WOFF2 web fonts
-- Organize files into the proper directory structure
-- Validate font files
-
-### Manual Build
-
-```bash
-# Generate TTF from OTF
-fonttools ttLib.otf2ttf sources/InvoluteSans-Regular.otf fonts/ttf/InvoluteSans-Regular.ttf
-
-# Generate WOFF
-fonttools ttLib.woff2compress fonts/ttf/InvoluteSans-Regular.ttf fonts/woff/InvoluteSans-Regular.woff
-
-# Generate WOFF2
-fonttools ttLib.woff2compress fonts/ttf/InvoluteSans-Regular.ttf fonts/woff2/InvoluteSans-Regular.woff2
-```
+The font files are ready to use directly. No additional setup or building is required.
 
 ## Usage
 
@@ -107,64 +76,37 @@ body {
 
 ### Desktop Applications
 
-Install the TTF or OTF files in your system's font directory:
+The font files can be installed directly on any operating system:
+- **Windows**: Right-click TTF file → Install
+- **macOS**: Double-click TTF file → Install Font
+- **Linux**: Copy to `~/.local/share/fonts/` or `/usr/share/fonts/`
 
-- **macOS**: `/Library/Fonts/` or `~/Library/Fonts/`
-- **Windows**: `C:\Windows\Fonts\`
-- **Linux**: `~/.local/share/fonts/` or `/usr/share/fonts/`
+## Designers
 
-## Contributing
+- **Thouhedul Islam Himel** - Lead Type Designer, Bengal Fonts
+- **Nowab Md. Aminul Haq** - Founder, Involute Tech
+- **Kazi Nasirul Islam** - Associate Type Developer, Bengal Fonts
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test the fonts
-5. Submit a pull request
+## Organizations
+
+- **Bengal Fonts** - First type foundry from Bangladesh
+- **Involute Tech** - Technology company focused on innovation and design
 
 ## License
 
-This project is licensed under the SIL Open Font License, Version 1.1. See [OFL.txt](OFL.txt) for details.
+This font is licensed under the SIL Open Font License, Version 1.1. See [OFL.txt](OFL.txt) for details.
+
+## Contributing
+
+Contributions are welcome! Please ensure any changes maintain the font's quality and Google Fonts compatibility.
 
 ## Support
 
-For questions and support, please open an issue on GitHub or contact the project maintainers.
+For support and questions:
+- Visit [bengalfonts.com](https://bengalfonts.com)
+- Contact [bengalfonts@gmail.com](mailto:bengalfonts@gmail.com)
 
-## Designers & Contributors
+---
 
-### Bengal Fonts Team
-- **Thouhedul Islam Himel**
-  - Lead Type Designer & Founder of Bengal Fonts
-  - Email: himel.bengalfonts@gmail.com
-  - Thouhedul Islam Himel is a visionary Bangladeshi type designer and the Founder of Bengal Fonts. With a deep understanding of Bangla typography and cultural aesthetics, he blends tradition with modern innovation to create typefaces that are functional, artistic, and timeless. His dedication to advancing Bangla type design continues to shape the future of typography in Bangladesh. 
-  - More of his works are available at bengalfonts.com
-
-- **Kazi Nasirul Islam**
-  - Associate Type Developer, Bengal Fonts
-  - Email: bengalfonts@gmail.com
-
-### Involute Team
-- **Nowab Md. Aminul Haq**
-  - Founder, Involute Tech
-  - Email: business@involutebd.com
-
-  - **Safa Tus Selahin Raj**
-  - Designer, Involute Tech
-  - Email: business@involutebd.com
-
-  - **Studio Shwo**
-  - Uppercase Character Set Design
-  - Email: studioshwo@gmail.com
-
-
-### Organizations
-- **Bengal Fonts** - Bengal Fonts is the first type foundry from Bangladesh, dedicated to developing high-quality Bangla and multilingual typefaces. With a mission to preserve cultural heritage while embracing modern design, it delivers reliable, professional, and visually harmonious fonts for both digital and print media.
-
-- **Involute Tech** - Involute Tech is a Bangladesh-based technology company focused on innovation, digital solutions, and future-driven design. With a vision to merge technology and creativity, Involute Tech delivers reliable services and forward-looking products that empower businesses and enhance user experiences.
-
-
-## Acknowledgments
-
-- Font Designer: [Thouhedul Islam Himel]
-- Contributors: [Nowab Md. Aminul Haq, Kazi Nasirul Islam, Studio Shwo]
-- Special thanks to the Google Fonts team for their tools and support
+*Involute Sans - Where Mathematics Meets Typography*
    
